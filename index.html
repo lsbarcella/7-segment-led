@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Advinhação!</title>
+    <link href="/styles.css" rel="stylesheet">
+    <script src="/index.js"></script>
+</head>
+
+<body>
+    <main class="base">
+        <div class="container">
+            <h1 class="title">QUAL É O NÚMERO?</h1>
+
+            <div class="divider"></div>
+
+            <h2 class="message" id="message"></h2>
+
+
+            <div class="LED">
+                <div class="led-area">
+                    <div id="1f" class="segment-1-first inactive"></div>
+                    <div id="2f" class="segment-2-first inactive"></div>
+                    <div id="3f" class="segment-3-first inactive"></div>
+                    <div id="4f" class="segment-4-first inactive"></div>
+                    <div id="5f" class="segment-5-first inactive"></div>
+                    <div id="6f" class="segment-6-first inactive"></div>
+                    <div id="7f" class="segment-7-first inactive"></div>
+                </div>
+                <div id="second-number" class="led-area led-hidden">
+                    <div id="1s" class="segment-1-second inactive"></div>
+                    <div id="2s" class="segment-2-second inactive"></div>
+                    <div id="3s" class="segment-3-second inactive"></div>
+                    <div id="4s" class="segment-4-second inactive"></div>
+                    <div id="5s" class="segment-5-second inactive"></div>
+                    <div id="6s" class="segment-6-second inactive"></div>
+                    <div id="7s" class="segment-7-second inactive"></div>
+                </div>
+                <div id="third-number" class="led-area led-hidden">
+                    <div id="1t" class="segment-1-third inactive"></div>
+                    <div id="2t" class="segment-2-third inactive"></div>
+                    <div id="3t" class="segment-3-third inactive"></div>
+                    <div id="4t" class="segment-4-third inactive"></div>
+                    <div id="5t" class="segment-5-third inactive"></div>
+                    <div id="6t" class="segment-6-third inactive"></div>
+                    <div id="7t" class="segment-7-third inactive"></div>
+                </div>
+            </div>
+
+
+            <button type="button" id="new-game-btn" class="new-game-btn hidden" onclick="newGame()">
+                NOVA PARTIDA
+            </button>
+            <div class="form-area">
+                <input type="text" class="input" id="input" placeholder="Digite o palpite">
+                <button type="button" id="button" class="submit-btn" onclick="compareGuess()">
+                    ENVIAR
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
